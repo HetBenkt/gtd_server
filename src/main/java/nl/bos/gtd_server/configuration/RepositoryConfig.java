@@ -14,5 +14,6 @@ public class RepositoryConfig extends RepositoryRestConfigurerAdapter {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
         config.exposeIdsFor(Member.class, Board.class, Column.class, Card.class);
+        config.getCorsRegistry().addMapping("/**").allowedOrigins("http://localhost:8080");
     }
 }
