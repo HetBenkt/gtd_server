@@ -22,27 +22,20 @@ public class Card {
     @Size(max = 16)
     String name;
 
-    @Null
     @Size(max = 64)
     String description;
 
-    @Null
     ArrayList<String> labels;
 
-    @Null
     @Size(max =8)
     String color;
 
-    @Null
     Long timeSpent;
 
-    @Null
     ArrayList<Date> dueDates;
 
-    @Null
     ArrayList<String> tasks;
 
-    @Null
     ArrayList<String> comments;
 
     @ManyToOne

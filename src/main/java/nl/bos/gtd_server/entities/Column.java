@@ -20,7 +20,6 @@ public class Column {
     @Size(max = 16)
     String name;
 
-    @Null
     @Size(max = 64)
     String description;
 

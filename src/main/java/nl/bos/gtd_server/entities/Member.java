@@ -18,15 +18,19 @@ public class Member {
     @NotNull
     @Size(max = 16)
     String firstName;
+
     @NotNull
     @Size(max = 16)
     String lastName;
+
     @NotNull
     @Size(max = 32)
     String email;
+
     @NotNull
     @Size(max = 16)
     String nickname;
+
     @NotNull
     @Size(max = 64)
     String password;
