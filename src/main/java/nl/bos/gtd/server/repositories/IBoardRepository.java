@@ -1,12 +1,12 @@
-package nl.bos.gtd_server.repositories;
+package nl.bos.gtd.server.repositories;
 
-import nl.bos.gtd_server.entities.Board;
-import nl.bos.gtd_server.entities.Member;
+import nl.bos.gtd.server.entities.Board;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 public interface IBoardRepository extends CrudRepository<Board, Long> {
     List<Board> findByMemberId(@Param("id") Long id);
 }

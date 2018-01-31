@@ -1,13 +1,16 @@
-package nl.bos.gtd_server.entities;
+package nl.bos.gtd.server.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
 import javax.validation.constraints.Size;
 import java.util.List;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Data
 @Table(name = "Columns")
@@ -28,5 +31,5 @@ public class Column {
     private Board board;
 
     @OneToMany(mappedBy = "column")
-    private List<Card> cards;
+    private static List<Card> cards;
 }

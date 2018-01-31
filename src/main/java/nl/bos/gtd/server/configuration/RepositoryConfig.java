@@ -1,13 +1,12 @@
-package nl.bos.gtd_server.configuration;
+package nl.bos.gtd.server.configuration;
 
-import nl.bos.gtd_server.entities.Board;
-import nl.bos.gtd_server.entities.Card;
-import nl.bos.gtd_server.entities.Column;
-import nl.bos.gtd_server.entities.Member;
+import nl.bos.gtd.server.entities.Card;
+import nl.bos.gtd.server.entities.Member;
+import nl.bos.gtd.server.entities.Board;
+import nl.bos.gtd.server.entities.Column;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
-import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
 
 @Configuration
 public class RepositoryConfig extends RepositoryRestConfigurerAdapter {

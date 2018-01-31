@@ -1,15 +1,17 @@
-package nl.bos.gtd_server.entities;
+package nl.bos.gtd.server.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Data
 @Table(name = "Cards")
@@ -40,5 +42,5 @@ public class Card {
 
     @ManyToOne
     @JoinColumn(name="column_id")
-    private Column column;
+    private nl.bos.gtd.server.entities.Column column;
 }
